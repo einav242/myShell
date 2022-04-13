@@ -330,9 +330,9 @@ int main()
     }
     else if (strncmp(cmd, "COPY", 4) == 0) // copy file source to dest file
     {
-      //* fwrite is a system call *//
-      //* fopen is a system call *//
-      //* fread is a system call *//
+      //* fwrite is a libary call *//
+      //* fopen is a libary call *//
+      //* fread is a libary call *//
       sendToCopy(cmd, sizeof(cmd));
     }
     else if (strncmp(cmd, "DELETE", 6) == 0)// delete file 
